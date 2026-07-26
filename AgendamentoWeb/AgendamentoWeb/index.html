@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <title>PAD Saúde — Agendamento</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- jsPDF: usado para exportar a lista de agendamentos em PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="app-topbar">
+      <img src="pad.png" alt="PAD Saúde" class="brand-logo" />
+    </header>
+    <main id="app" class="app-content">
+      <!-- Telas são renderizadas dinamicamente aqui pelo app.js -->
+    </main>
+  </div>
+
+  <!-- Configuração da API -->
+  <script src="js/config.js"></script>
+  <!-- Camada de acesso à AmigoAPI -->
+  <script src="js/api.js"></script>
+  <!-- Estado global do fluxo de agendamento -->
+  <script src="js/state.js"></script>
+  <!-- Cache local (localStorage) para campos que a API não devolve na leitura -->
+  <script src="js/localCache.js"></script>
+  <!-- Componentes de UI reutilizáveis -->
+  <script src="js/ui.js"></script>
+  <!-- Telas -->
+  <script src="js/screens/splash.js"></script>
+  <script src="js/screens/patientVerification.js"></script>
+  <script src="js/screens/patientRegistration.js"></script>
+  <script src="js/screens/placeSelection.js"></script>
+  <script src="js/screens/specialtySelection.js"></script>
+  <script src="js/screens/eventSelection.js"></script>
+  <script src="js/screens/doctorSelection.js"></script>
+  <script src="js/screens/dateTimeSelection.js"></script>
+  <script src="js/screens/confirmation.js"></script>
+  <script src="js/screens/myAppointments.js"></script>
+  <script src="js/screens/profileEdit.js"></script>
+  <script src="js/screens/reschedule.js"></script>
+  <script src="js/screens/reports.js"></script>
+  <!-- Router / bootstrap -->
+  <script src="js/app.js"></script>
+</body>
+</html>
